@@ -1,0 +1,853 @@
+Questão 1
+int[] v = new int[10];
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(v[i]);
+}
+
+
+Questão 2
+int[] v = new int[10];
+int soma = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+    soma += v[i];
+}
+
+Console.WriteLine(soma);
+
+
+Questão 3
+int[] v = new int[10];
+int soma = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+    soma += v[i];
+}
+
+Console.WriteLine(soma / 10.0);
+
+
+Questão 4
+int[] v = new int[8];
+int maior = int.MinValue;
+
+for (int i = 0; i < 8; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] > maior)
+        maior = v[i];
+}
+
+Console.WriteLine(maior);
+
+
+Questão 5
+int[] v = new int[8];
+int menor = int.MaxValue;
+
+for (int i = 0; i < 8; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] < menor)
+        menor = v[i];
+}
+
+Console.WriteLine(menor);
+
+
+Questão 6
+int[] v = new int[10];
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 9; i >= 0; i--)
+{
+    Console.WriteLine(v[i]);
+}
+
+
+Questão 7
+int[] v = new int[10];
+int pares = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] % 2 == 0)
+        pares++;
+}
+
+Console.WriteLine(pares);
+
+
+Questão 8
+int[] v = new int[10];
+int positivos = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] > 0)
+        positivos++;
+}
+
+Console.WriteLine(positivos);
+
+
+Questão 9
+string[] nomes = new string[5];
+
+for (int i = 0; i < 5; i++)
+{
+    nomes[i] = Console.ReadLine();
+}
+
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(nomes[i]);
+}
+
+
+Questão 10
+double[] notas = new double[10];
+double soma = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    notas[i] = double.Parse(Console.ReadLine());
+    soma += notas[i];
+}
+
+double media = soma / 10;
+
+int acima = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    if (notas[i] > media)
+        acima++;
+}
+
+Console.WriteLine(acima);
+
+
+Questão 11
+int[] a = new int[5];
+int[] b = new int[5];
+
+for (int i = 0; i < 5; i++)
+{
+    a[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 5; i++)
+{
+    b[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(a[i] + b[i]);
+}
+
+
+Questão 12
+int[] v = new int[10];
+int maior = int.MinValue;
+int pos = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] > maior)
+    {
+        maior = v[i];
+        pos = i;
+    }
+}
+
+Console.WriteLine(pos);
+
+
+Questão 13
+int[] v = new int[6];
+
+for (int i = 0; i < 6; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+    v[i] *= 2;
+}
+
+for (int i = 0; i < 6; i++)
+{
+    Console.WriteLine(v[i]);
+}
+
+
+Questão 14
+int[] v = new int[10];
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 10; i++)
+{
+    if (v[i] % 2 != 0)
+        Console.WriteLine(v[i]);
+}
+
+
+Questão 15
+int[] v = new int[7];
+int soma = 0;
+
+for (int i = 0; i < 7; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (i % 2 == 0)
+        soma += v[i];
+}
+
+Console.WriteLine(soma);
+
+
+Questão 16
+int[] v = new int[10];
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+int x = int.Parse(Console.ReadLine());
+bool existe = false;
+
+for (int i = 0; i < 10; i++)
+{
+    if (v[i] == x)
+        existe = true;
+}
+
+Console.WriteLine(existe);
+
+
+Questão 17
+int[] idades = new int[5];
+int maior = 0;
+
+for (int i = 0; i < 5; i++)
+{
+    idades[i] = int.Parse(Console.ReadLine());
+
+    if (idades[i] >= 18)
+        maior++;
+}
+
+Console.WriteLine(maior);
+
+
+Questão 18
+int[] v = new int[10];
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+int temp = v[0];
+v[0] = v[9];
+v[9] = temp;
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(v[i]);
+}
+
+
+Questão 19
+int[] v = new int[8];
+int maior = int.MinValue;
+int menor = int.MaxValue;
+
+for (int i = 0; i < 8; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] > maior) maior = v[i];
+    if (v[i] < menor) menor = v[i];
+}
+
+Console.WriteLine(maior - menor);
+
+
+Questão 20
+int[] v = new int[10];
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+Array.Sort(v);
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(v[i]);
+}
+
+
+Perfeito — agora vamos subir o nível. Aqui estão as questões 21 a 50 de vetores (nível médio e avançado) em C#, no mesmo padrão.
+
+Questão 21
+double[] v = new double[6];
+
+for (int i = 0; i < 6; i++)
+{
+    v[i] = double.Parse(Console.ReadLine());
+    v[i] = v[i] * 0.9;
+}
+
+for (int i = 0; i < 6; i++)
+{
+    Console.WriteLine(v[i]);
+}
+
+
+Questão 22
+double[] v = new double[10];
+double soma = 0;
+int cont = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = double.Parse(Console.ReadLine());
+
+    if (v[i] > 0)
+    {
+        soma += v[i];
+        cont++;
+    }
+}
+
+Console.WriteLine(soma / cont);
+
+
+Questão 23
+int[] v = new int[5];
+int soma = 0;
+
+for (int i = 0; i < 5; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+    Console.WriteLine(v[i]);
+    soma += v[i];
+}
+
+Console.WriteLine(soma);
+
+
+Questão 24
+int[] v = new int[10];
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] < 0)
+        v[i] = 0;
+}
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(v[i]);
+}
+
+
+Questão 25
+int[] v = new int[12];
+int maior = int.MinValue;
+int mes = 0;
+
+for (int i = 0; i < 12; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] > maior)
+    {
+        maior = v[i];
+        mes = i + 1;
+    }
+}
+
+Console.WriteLine(mes);
+
+
+Questão 26
+int[] a = new int[4];
+int[] b = new int[4];
+int soma = 0;
+
+for (int i = 0; i < 4; i++)
+{
+    a[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 4; i++)
+{
+    b[i] = int.Parse(Console.ReadLine());
+    soma += a[i] * b[i];
+}
+
+Console.WriteLine(soma);
+
+
+Questão 27
+int[] v = new int[10];
+int x = int.Parse(Console.ReadLine());
+int cont = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] == x)
+        cont++;
+}
+
+Console.WriteLine(cont);
+
+
+Questão 28
+int[] v = new int[8];
+
+for (int i = 0; i < 8; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] > 30)
+        Console.WriteLine(v[i]);
+}
+
+
+Questão 29
+int[] v = new int[10];
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 1; i < 10; i += 2)
+{
+    Console.WriteLine(v[i]);
+}
+Questão 30
+int[] v = new int[5];
+int[] q = new int[5];
+
+for (int i = 0; i < 5; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+    q[i] = v[i] * v[i];
+}
+
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(q[i]);
+}
+
+
+Questão 31
+int[] v = new int[10];
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+bool crescente = true;
+
+for (int i = 1; i < 10; i++)
+{
+    if (v[i] < v[i - 1])
+        crescente = false;
+}
+
+Console.WriteLine(crescente);
+
+
+Questão 32
+int[] v = new int[7];
+
+for (int i = 0; i < 7; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+Array.Sort(v);
+
+int soma = v[4] + v[5] + v[6];
+Console.WriteLine(soma);
+
+
+Questão 33
+int[] v = new int[10];
+int cont = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] % 5 == 0)
+        cont++;
+}
+
+Console.WriteLine(cont);
+
+
+Questão 34
+double[] v = new double[6];
+double soma = 0;
+double maior = double.MinValue;
+double menor = double.MaxValue;
+
+for (int i = 0; i < 6; i++)
+{
+    v[i] = double.Parse(Console.ReadLine());
+
+    soma += v[i];
+
+    if (v[i] > maior) maior = v[i];
+    if (v[i] < menor) menor = v[i];
+}
+
+Console.WriteLine(maior);
+Console.WriteLine(menor);
+Console.WriteLine(soma / 6);
+
+
+Questão 35
+int[] v = new int[10];
+int x = int.Parse(Console.ReadLine());
+int cont = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] == x)
+        cont++;
+}
+
+Console.WriteLine(cont);
+
+
+Questão 36
+string[] nomes = new string[5];
+int[] idades = new int[5];
+
+for (int i = 0; i < 5; i++)
+{
+    nomes[i] = Console.ReadLine();
+}
+
+for (int i = 0; i < 5; i++)
+{
+    idades[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine($"{nomes[i]} - {idades[i]}");
+}
+
+
+Questão 37
+int[] v = new int[10];
+int somaPar = 0;
+int somaImpar = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (i % 2 == 0)
+        somaPar += v[i];
+    else
+        somaImpar += v[i];
+}
+
+Console.WriteLine(somaPar);
+Console.WriteLine(somaImpar);
+
+
+Questão 38
+int[] v = new int[8];
+int[] positivos = new int[8];
+int j = 0;
+
+for (int i = 0; i < 8; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+
+    if (v[i] > 0)
+    {
+        positivos[j] = v[i];
+        j++;
+    }
+}
+
+
+Questão 39
+int[] v = new int[10];
+int soma = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+double media = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    soma += v[i];
+}
+
+media = soma / 10.0;
+
+int cont = 0;
+
+for (int i = 0; i < 10; i++)
+{
+    if (v[i] > media)
+        cont++;
+}
+
+Console.WriteLine(cont);
+
+
+Questão 40
+int[] v = new int[9];
+
+for (int i = 0; i < 9; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine(v[4]);
+
+
+Questão 41
+int[] v = new int[10];
+
+for (int i = 9; i > 0; i--)
+{
+    v[i] = v[i - 1];
+}
+
+
+Questão 42
+int[] v = new int[6];
+bool repetido = false;
+
+for (int i = 0; i < 6; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 6; i++)
+{
+    for (int j = i + 1; j < 6; j++)
+    {
+        if (v[i] == v[j])
+            repetido = true;
+    }
+}
+
+Console.WriteLine(repetido);
+
+
+Questão 43
+int[] v = new int[10];
+int maior = int.MinValue;
+int segundo = int.MinValue;
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 10; i++)
+{
+    if (v[i] > maior)
+    {
+        segundo = maior;
+        maior = v[i];
+    }
+    else if (v[i] > segundo && v[i] != maior)
+    {
+        segundo = v[i];
+    }
+}
+
+Console.WriteLine(segundo);
+
+
+Questão 44
+int[] v = new int[5];
+
+for (int i = 0; i < 5; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 2; i++)
+{
+    int temp = v[i];
+    v[i] = v[4 - i];
+    v[4 - i] = temp;
+}
+
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(v[i]);
+}
+
+
+Questão 45
+int[] v = new int[10];
+int inicio = int.Parse(Console.ReadLine());
+int fim = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+int soma = 0;
+
+for (int i = inicio; i <= fim; i++)
+{
+    soma += v[i];
+}
+
+Console.WriteLine(soma);
+
+
+Questão 46
+int[] v = new int[12];
+int soma1 = 0, soma2 = 0;
+
+for (int i = 0; i < 12; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 6; i++)
+{
+    soma1 += v[i];
+}
+
+for (int i = 6; i < 12; i++)
+{
+    soma2 += v[i];
+}
+
+Console.WriteLine(soma1 / 6.0);
+Console.WriteLine(soma2 / 6.0);
+
+
+Questão 47
+double[] v = new double[10];
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = double.Parse(Console.ReadLine());
+
+    if (v[i] >= 7)
+        Console.WriteLine("Aprovado");
+    else
+        Console.WriteLine("Reprovado");
+}
+
+
+Questão 48
+int[] v = new int[8];
+int cont = 0;
+
+for (int i = 0; i < 7; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 7; i++)
+{
+    if (v[i] == v[i + 1])
+        cont++;
+}
+
+Console.WriteLine(cont);
+
+
+Questão 49
+int[] v = new int[10];
+
+for (int i = 0; i < 10; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < 10; i++)
+{
+    int cont = 0;
+
+    for (int j = 0; j < 10; j++)
+    {
+        if (v[i] == v[j])
+            cont++;
+    }
+
+    if (cont == 1)
+        Console.WriteLine(v[i]);
+}
+
+
+Questão 50
+int[] v = new int[5];
+int primeiro;
+
+for (int i = 0; i < 5; i++)
+{
+    v[i] = int.Parse(Console.ReadLine());
+}
+
+primeiro = v[0];
+
+for (int i = 1; i < 5; i++)
+{
+    if (v[i] > primeiro)
+        Console.WriteLine(v[i]);
+}
