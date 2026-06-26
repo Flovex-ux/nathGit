@@ -639,25 +639,4 @@ else
     Console.WriteLine("Número com mais de um dígito");
 }
 
-Macetes novos desta lista
-Situação
-Código
-Par ou ímpar
-numero % 2 == 0
-Múltiplo de X
-numero % X == 0
-Intervalo
-valor >= min && valor <= max
-Uma condição OU outra
-`cond1
-Maiúscula
-char.IsUpper(letra)
-Média
-(n1 + n2) / 2
-Ano bissexto
-`(ano % 4 == 0 && ano % 100 != 0)
-Último dígito
-numero % 10
-Centena exata
-numero % 100 == 0
 
