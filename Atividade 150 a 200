@@ -1,0 +1,698 @@
+Questão 1
+int i = 1;
+
+while (i <= 10)
+{
+    Console.WriteLine(i);
+    i++;
+}
+
+Questão 2
+int soma = 0;
+int numero = int.Parse(Console.ReadLine());
+
+while (numero != 0)
+{
+    soma += numero;
+    numero = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine(soma);
+
+Questão 3
+int soma = 0;
+int i = 1;
+
+while (i <= 100)
+{
+    soma += i;
+    i++;
+}
+
+Console.WriteLine(soma);
+
+Questão 4
+int numero = int.Parse(Console.ReadLine());
+int i = 1;
+
+while (i <= 10)
+{
+    Console.WriteLine($"{numero} x {i} = {numero * i}");
+    i++;
+}
+
+Questão 5
+string senha = "";
+
+while (senha != "1234")
+{
+    senha = Console.ReadLine();
+}
+
+Console.WriteLine("Senha correta");
+
+Questão 6
+int i = 10;
+
+while (i >= 1)
+{
+    Console.WriteLine(i);
+    i--;
+}
+
+Questão 7
+int soma = 0;
+int numero = int.Parse(Console.ReadLine());
+
+while (numero >= 0)
+{
+    soma += numero;
+    numero = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine(soma);
+
+Questão 8
+int numero = int.Parse(Console.ReadLine());
+int contador = 0;
+
+while (numero > 1)
+{
+    numero /= 2;
+    contador++;
+}
+
+Console.WriteLine(contador);
+
+Questão 9
+int maior = int.MinValue;
+int numero = int.Parse(Console.ReadLine());
+
+while (numero != 0)
+{
+    if (numero > maior)
+        maior = numero;
+
+    numero = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine(maior);
+
+Questão 10
+int i = 2;
+
+while (i <= 20)
+{
+    Console.WriteLine(i);
+    i += 2;
+}
+
+Questão 11
+double soma = 0;
+int contador = 0;
+
+double nota = double.Parse(Console.ReadLine());
+
+while (nota != -1)
+{
+    soma += nota;
+    contador++;
+
+    nota = double.Parse(Console.ReadLine());
+}
+
+Console.WriteLine(soma / contador);
+
+Questão 12
+int pin = 0;
+
+while (pin != 5678)
+{
+    pin = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("PIN correto");
+
+Questão 13
+int numero = int.Parse(Console.ReadLine());
+
+long fatorial = 1;
+
+while (numero > 1)
+{
+    fatorial *= numero;
+    numero--;
+}
+
+Console.WriteLine(fatorial);
+
+Questão 14
+int contador = 0;
+int idade = int.Parse(Console.ReadLine());
+
+while (idade != 0)
+{
+    if (idade >= 18)
+        contador++;
+
+    idade = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine(contador);
+
+Questão 15
+int a = 0;
+int b = 1;
+
+while (a <= 100)
+{
+    Console.WriteLine(a);
+
+    int temp = a + b;
+    a = b;
+    b = temp;
+}
+
+Questão 16
+int numero = int.Parse(Console.ReadLine());
+
+int contador = 0;
+
+while (numero != 0)
+{
+    numero /= 10;
+    contador++;
+}
+
+Console.WriteLine(contador);
+
+Questão 17
+int soma = 0;
+int i = 3;
+
+while (i <= 30)
+{
+    soma += i;
+    i += 3;
+}
+
+Console.WriteLine(soma);
+
+Questão 18
+int soma = 0;
+int contador = 0;
+
+while (soma <= 1000)
+{
+    int numero = int.Parse(Console.ReadLine());
+
+    soma += numero;
+    contador++;
+}
+
+Console.WriteLine(contador);
+
+Questão 19
+int numero = int.Parse(Console.ReadLine());
+
+int invertido = 0;
+
+while (numero > 0)
+{
+    invertido = invertido * 10 + numero % 10;
+    numero /= 10;
+}
+
+Console.WriteLine(invertido);
+
+Questão 20
+int numero = int.Parse(Console.ReadLine());
+
+while (numero < 1 || numero > 10)
+{
+    numero = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("Número válido");
+
+Questão 21
+int i = 5;
+
+while (i < 100)
+{
+    Console.WriteLine(i);
+    i += 5;
+}
+
+Questão 22
+int pares = 0;
+int impares = 0;
+
+int numero = int.Parse(Console.ReadLine());
+
+while (numero != 0)
+{
+    if (numero % 2 == 0)
+        pares++;
+    else
+        impares++;
+
+    numero = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine($"Pares: {pares}");
+Console.WriteLine($"Ímpares: {impares}");
+
+Questão 23
+double valor = double.Parse(Console.ReadLine());
+
+while (valor >= 1)
+{
+    Console.WriteLine(valor);
+    valor /= 10;
+}
+
+Questão 24
+int numero = int.Parse(Console.ReadLine());
+
+int soma = 0;
+
+while (numero > 0)
+{
+    soma += numero % 10;
+    numero /= 10;
+}
+
+Console.WriteLine(soma);
+
+Questão 25
+int soma = 0;
+int numero = 1;
+int contador = 0;
+
+while (soma <= 50)
+{
+    soma += numero;
+    numero++;
+    contador++;
+}
+
+Console.WriteLine(contador);
+
+Questão 26
+Leia produtos e preços até digitar preço 0 e exiba o total da compra.
+double total = 0;
+
+double preco = double.Parse(Console.ReadLine());
+
+while (preco != 0)
+{
+    total += preco;
+    preco = double.Parse(Console.ReadLine());
+}
+
+Console.WriteLine(total);
+
+
+Questão 27
+Exiba os números de 100 a 1 de 10 em 10.
+int numero = 100;
+
+while (numero >= 1)
+{
+    Console.WriteLine(numero);
+    numero -= 10;
+}
+
+
+Questão 28
+Leia temperaturas até digitar -100 e calcule a média.
+double soma = 0;
+int contador = 0;
+
+double temperatura = double.Parse(Console.ReadLine());
+
+while (temperatura != -100)
+{
+    soma += temperatura;
+    contador++;
+
+    temperatura = double.Parse(Console.ReadLine());
+}
+
+Console.WriteLine(soma / contador);
+
+
+Questão 29
+Verifique se um número é primo.
+int numero = int.Parse(Console.ReadLine());
+
+int divisor = 2;
+bool primo = true;
+
+while (divisor < numero)
+{
+    if (numero % divisor == 0)
+    {
+        primo = false;
+        break;
+    }
+
+    divisor++;
+}
+
+if (primo && numero > 1)
+{
+    Console.WriteLine("Primo");
+}
+else
+{
+    Console.WriteLine("Não primo");
+}
+
+
+Questão 30
+Leia valores até digitar 0 e exiba o menor positivo.
+int menor = int.MaxValue;
+
+int numero = int.Parse(Console.ReadLine());
+
+while (numero != 0)
+{
+    if (numero > 0 && numero < menor)
+    {
+        menor = numero;
+    }
+
+    numero = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine(menor);
+
+
+Questão 31
+Menu até escolher Sair.
+string opcao = "";
+
+while (opcao != "Sair")
+{
+    opcao = Console.ReadLine();
+}
+
+
+Questão 32
+Potência usando while.
+int baseNum = int.Parse(Console.ReadLine());
+int expoente = int.Parse(Console.ReadLine());
+
+int resultado = 1;
+int contador = 0;
+
+while (contador < expoente)
+{
+    resultado *= baseNum;
+    contador++;
+}
+
+Console.WriteLine(resultado);
+
+
+Questão 33
+Conte quantas vezes o dígito 5 aparece.
+int numero = int.Parse(Console.ReadLine());
+
+int contador = 0;
+
+while (numero > 0)
+{
+    if (numero % 10 == 5)
+    {
+        contador++;
+    }
+
+    numero /= 10;
+}
+
+Console.WriteLine(contador);
+
+
+Questão 34
+Some os ímpares de 1 a 50.
+int soma = 0;
+int numero = 1;
+
+while (numero <= 50)
+{
+    soma += numero;
+    numero += 2;
+}
+
+Console.WriteLine(soma);
+
+
+Questão 35
+Adivinhe o número 7.
+int tentativa = int.Parse(Console.ReadLine());
+
+while (tentativa != 7)
+{
+    tentativa = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("Acertou!");
+
+
+Questão 36
+Pare ao ler dois números iguais consecutivos.
+int anterior = int.Parse(Console.ReadLine());
+int atual = int.Parse(Console.ReadLine());
+
+while (anterior != atual)
+{
+    anterior = atual;
+    atual = int.Parse(Console.ReadLine());
+}
+
+
+Questão 37
+Tabuada do 9.
+int i = 1;
+
+while (i <= 10)
+{
+    Console.WriteLine($"9 x {i} = {9 * i}");
+    i++;
+}
+
+
+Questão 38
+Leia 10 valores e conte quantos são maiores que a média.
+double[] valores = new double[10];
+
+int i = 0;
+double soma = 0;
+
+while (i < 10)
+{
+    valores[i] = double.Parse(Console.ReadLine());
+    soma += valores[i];
+    i++;
+}
+
+double media = soma / 10;
+
+int maiores = 0;
+i = 0;
+
+while (i < 10)
+{
+    if (valores[i] > media)
+    {
+        maiores++;
+    }
+
+    i++;
+}
+
+Console.WriteLine(maiores);
+
+
+Questão 39
+MDC por subtrações sucessivas.
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+
+while (a != b)
+{
+    if (a > b)
+        a -= b;
+    else
+        b -= a;
+}
+
+Console.WriteLine(a);
+
+
+Questão 40
+Média dos positivos.
+double soma = 0;
+int contador = 0;
+
+int numero = int.Parse(Console.ReadLine());
+
+while (numero != 0)
+{
+    if (numero > 0)
+    {
+        soma += numero;
+        contador++;
+    }
+
+    numero = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine(soma / contador);
+
+
+Questão 41
+Cronômetro de 0 a 60.
+int segundo = 0;
+
+while (segundo <= 60)
+{
+    Console.WriteLine(segundo);
+    segundo++;
+}
+
+
+Questão 42
+Conte quantos 1s existem em um número binário.
+long binario = long.Parse(Console.ReadLine());
+
+int contador = 0;
+
+while (binario > 0)
+{
+    if (binario % 10 == 1)
+    {
+        contador++;
+    }
+
+    binario /= 10;
+}
+
+Console.WriteLine(contador);
+
+
+Questão 43
+Quadrados menores que 200.
+int numero = 1;
+
+while (numero * numero < 200)
+{
+    Console.WriteLine(numero * numero);
+    numero++;
+}
+
+
+Questão 44
+Leia 5 valores e exiba a soma.
+int contador = 0;
+double soma = 0;
+
+while (contador < 5)
+{
+    soma += double.Parse(Console.ReadLine());
+    contador++;
+}
+
+Console.WriteLine(soma);
+
+
+Questão 45
+Peça um número positivo.
+int numero = int.Parse(Console.ReadLine());
+
+while (numero < 0)
+{
+    numero = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("Número válido");
+
+
+Questão 46
+Conte quantos números de 1 a 1000 são divisíveis por 7.
+int contador = 0;
+int numero = 1;
+
+while (numero <= 1000)
+{
+    if (numero % 7 == 0)
+    {
+        contador++;
+    }
+
+    numero++;
+}
+
+Console.WriteLine(contador);
+
+
+Questão 47
+Reduza à metade até ficar menor que 1.
+double numero = double.Parse(Console.ReadLine());
+
+while (numero >= 1)
+{
+    Console.WriteLine(numero);
+    numero /= 2;
+}
+
+
+Questão 48
+Retire itens do estoque até zerar.
+int estoque = 50;
+
+while (estoque > 0)
+{
+    Console.WriteLine($"Estoque: {estoque}");
+    estoque--;
+}
+
+Console.WriteLine("Estoque zerado");
+
+
+Questão 49
+Leia valores até 999 e conte os negativos.
+int negativos = 0;
+
+int numero = int.Parse(Console.ReadLine());
+
+while (numero != 999)
+{
+    if (numero < 0)
+    {
+        negativos++;
+    }
+
+    numero = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine(negativos);
+
+
+Questão 50
+Calcule:
+1 + 1/2 + 1/4 + 1/8 + ...
+enquanto o termo for maior que 0.001.
+double termo = 1;
+double soma = 0;
+
+while (termo > 0.001)
+{
+    soma += termo;
+    termo /= 2;
+}
+
+Console.WriteLine(soma);
