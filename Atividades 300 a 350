@@ -1,0 +1,930 @@
+Questão 1
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        Console.Write(m[i, j] + " ");
+    }
+    Console.WriteLine();
+}
+
+
+Questão 2
+int[,] m = new int[3, 3];
+int soma = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        soma += m[i, j];
+    }
+}
+
+Console.WriteLine(soma);
+
+
+Questão 3
+int[,] m = new int[4, 4];
+int maior = int.MinValue;
+
+for (int i = 0; i < 4; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] > maior)
+            maior = m[i, j];
+    }
+}
+
+Console.WriteLine(maior);
+
+
+Questão 4
+int[,] m = new int[4, 4];
+int menor = int.MaxValue;
+
+for (int i = 0; i < 4; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] < menor)
+            menor = m[i, j];
+    }
+}
+
+Console.WriteLine(menor);
+
+
+Questão 5
+int[,] m = new int[3, 3];
+int soma = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i == j)
+            soma += m[i, j];
+    }
+}
+
+Console.WriteLine(soma);
+
+
+Questão 6
+int[,] m = new int[3, 3];
+int soma = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i + j == 2)
+            soma += m[i, j];
+    }
+}
+
+Console.WriteLine(soma);
+
+
+Questão 7
+int[,] m = new int[3, 4];
+
+for (int i = 0; i < 3; i++)
+{
+    int soma = 0;
+
+    for (int j = 0; j < 4; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        soma += m[i, j];
+    }
+
+    Console.WriteLine(soma);
+}
+
+
+Questão 8
+int[,] m = new int[3, 4];
+
+for (int j = 0; j < 4; j++)
+{
+    int soma = 0;
+
+    for (int i = 0; i < 3; i++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        soma += m[i, j];
+    }
+
+    Console.WriteLine(soma);
+}
+
+
+Questão 9
+int[,] m = new int[3, 3];
+int pares = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] % 2 == 0)
+            pares++;
+    }
+}
+
+Console.WriteLine(pares);
+
+
+Questão 10
+int[,] m = new int[3, 3];
+int positivos = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] > 0)
+            positivos++;
+    }
+}
+
+Console.WriteLine(positivos);
+
+
+Questão 11
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+for (int j = 0; j < 3; j++)
+{
+    for (int i = 0; i < 3; i++)
+    {
+        Console.Write(m[i, j] + " ");
+    }
+    Console.WriteLine();
+}
+
+
+Questão 12
+int[,] m = new int[4, 4];
+int soma = 0;
+
+for (int i = 0; i < 4; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        soma += m[i, j];
+    }
+}
+
+Console.WriteLine(soma / 16.0);
+
+
+Questão 13
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        m[i, j] *= 2;
+    }
+}
+
+
+Questão 14
+int[,] a = new int[2, 2];
+int[,] b = new int[2, 2];
+int[,] r = new int[2, 2];
+
+for (int i = 0; i < 2; i++)
+{
+    for (int j = 0; j < 2; j++)
+    {
+        a[i, j] = int.Parse(Console.ReadLine());
+        b[i, j] = int.Parse(Console.ReadLine());
+        r[i, j] = a[i, j] + b[i, j];
+    }
+}
+
+
+Questão 15
+int[,] m = new int[3, 3];
+
+for (int j = 0; j < 3; j++)
+{
+    m[0, j] = int.Parse(Console.ReadLine());
+    Console.WriteLine(m[0, j]);
+}
+
+
+Questão 16
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    m[i, 2] = int.Parse(Console.ReadLine());
+    Console.WriteLine(m[i, 2]);
+}
+
+
+Questão 17
+int[,] m = new int[4, 4];
+int x = int.Parse(Console.ReadLine());
+bool existe = false;
+
+for (int i = 0; i < 4; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] == x)
+            existe = true;
+    }
+}
+
+Console.WriteLine(existe);
+
+
+Questão 18
+int[,] m = new int[3, 3];
+int maior = int.MinValue;
+int li = 0, lj = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] > maior)
+        {
+            maior = m[i, j];
+            li = i;
+            lj = j;
+        }
+    }
+}
+
+Console.WriteLine($"{li},{lj}");
+
+
+Questão 19
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] < 0)
+            m[i, j] = 0;
+    }
+}
+
+
+Questão 20
+int[,] m = new int[3, 3];
+int soma = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i < j)
+            soma += m[i, j];
+    }
+}
+
+Console.WriteLine(soma);
+
+
+Perfeito — aqui vai a continuação 21 a 50 (matrizes nível médio/avançado em C#), direto e organizado.
+
+Questão 21
+int[,] m = new int[3, 3];
+int soma = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i > j)
+            soma += m[i, j];
+    }
+}
+
+Console.WriteLine(soma);
+
+
+Questão 22
+int[,] m = new int[2, 3];
+int cont = 0;
+
+for (int i = 0; i < 2; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] % 3 == 0)
+            cont++;
+    }
+}
+
+Console.WriteLine(cont);
+
+
+Questão 23
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    double soma = 0;
+
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        soma += m[i, j];
+    }
+
+    Console.WriteLine(soma / 3);
+}
+
+
+Questão 24
+int[,] m = new int[3, 3];
+
+for (int j = 0; j < 3; j++)
+{
+    double soma = 0;
+
+    for (int i = 0; i < 3; i++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        soma += m[i, j];
+    }
+
+    Console.WriteLine(soma / 3);
+}
+
+
+Questão 25
+int[,] m = new int[4, 4];
+int x = int.Parse(Console.ReadLine());
+int cont = 0;
+
+for (int i = 0; i < 4; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] == x)
+            cont++;
+    }
+}
+
+Console.WriteLine(cont);
+
+
+Questão 26
+int[,] m = new int[3, 3];
+bool simetrica = true;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        if (m[i, j] != m[j, i])
+            simetrica = false;
+    }
+}
+
+Console.WriteLine(simetrica);
+
+
+Questão 27
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    int maior = int.MinValue;
+
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] > maior)
+            maior = m[i, j];
+    }
+
+    Console.WriteLine(maior);
+}
+
+
+Questão 28
+int[,] a = new int[2, 2];
+int[,] b = new int[2, 2];
+int[,] r = new int[2, 2];
+
+for (int i = 0; i < 2; i++)
+{
+    for (int j = 0; j < 2; j++)
+    {
+        a[i, j] = int.Parse(Console.ReadLine());
+        b[i, j] = int.Parse(Console.ReadLine());
+
+        r[i, j] = 0;
+        for (int k = 0; k < 2; k++)
+        {
+            r[i, j] += a[i, k] * b[k, j];
+        }
+    }
+}
+
+
+Questão 29
+int[,] m = new int[3, 3];
+int soma = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i == 0 || i == 2 || j == 0 || j == 2)
+            soma += m[i, j];
+    }
+}
+
+Console.WriteLine(soma);
+
+
+Questão 30
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+for (int j = 0; j < 3; j++)
+{
+    int temp = m[0, j];
+    m[0, j] = m[2, j];
+    m[2, j] = temp;
+}
+
+
+Questão 31
+int[,] m = new int[4, 4];
+
+for (int i = 0; i < 4; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i == j)
+            Console.WriteLine(m[i, j]);
+    }
+}
+
+
+Questão 32
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        Console.Write(m[i, j] + "\t");
+    }
+    Console.WriteLine();
+}
+
+
+Questão 33
+int[,] m = new int[3, 3];
+int[] somaCol = new int[3];
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        somaCol[j] += m[i, j];
+    }
+}
+
+for (int j = 0; j < 3; j++)
+{
+    Console.WriteLine(somaCol[j]);
+}
+
+
+Questão 34
+int[,] m = new int[3, 3];
+bool positivo = true;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] < 0)
+            positivo = false;
+    }
+}
+
+Console.WriteLine(positivo);
+
+
+Questão 35
+int[,] m = new int[3, 4];
+
+for (int i = 0; i < 3; i++)
+{
+    int maior = int.MinValue;
+
+    for (int j = 0; j < 4; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] > maior)
+            maior = m[i, j];
+    }
+
+    Console.WriteLine(maior);
+}
+
+
+Questão 36
+int[,] m = new int[3, 3];
+int soma = 0;
+int cont = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        soma += m[i, j];
+        cont++;
+    }
+}
+
+double media = soma / (double)cont;
+
+int acima = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        if (m[i, j] > media)
+            acima++;
+    }
+}
+
+Console.WriteLine(acima);
+
+
+Questão 37
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+for (int j = 0; j < 3; j++)
+{
+    for (int i = 0; i < 3; i++)
+    {
+        Console.Write(m[i, j] + " ");
+    }
+    Console.WriteLine();
+}
+
+
+Questão 38
+int[,] m = new int[4, 4];
+int soma = 0;
+
+for (int i = 0; i < 4; i++)
+{
+    for (int j = 0; j < 4; j++)
+{
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i % 2 == 0 && j % 2 == 0)
+            soma += m[i, j];
+    }
+}
+
+Console.WriteLine(soma);
+
+
+Questão 39
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    int cont = 0;
+
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] > 10)
+            cont++;
+    }
+
+    Console.WriteLine(cont);
+}
+
+
+Questão 40
+int[,] m = new int[3, 3];
+bool linha1 = true;
+
+for (int j = 0; j < 3; j++)
+{
+    m[0, j] = int.Parse(Console.ReadLine());
+
+    if (m[0, j] != 1)
+        linha1 = false;
+}
+
+Console.WriteLine(linha1);
+
+
+Questão 41
+int[,] m = new int[3, 3];
+int dp = 0, ds = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i == j)
+            dp += m[i, j];
+
+        if (i + j == 2)
+            ds += m[i, j];
+    }
+}
+
+Console.WriteLine(dp - ds);
+
+
+Questão 42
+int[,] m = new int[3, 3];
+int[,] q = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        q[i, j] = m[i, j] * m[i, j];
+    }
+}
+
+
+Questão 43
+int[,] m = new int[2, 4];
+int soma = 0;
+int cont = 0;
+
+for (int i = 0; i < 2; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        soma += m[i, j];
+        cont++;
+    }
+}
+
+double media = soma / (double)cont;
+int acima = 0;
+
+for (int i = 0; i < 2; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        if (m[i, j] > media)
+            acima++;
+    }
+}
+
+Console.WriteLine(media);
+Console.WriteLine(acima);
+
+
+Questão 44
+int[,] m = new int[3, 3];
+bool identidade = true;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i == j && m[i, j] != 1)
+            identidade = false;
+
+        if (i != j && m[i, j] != 0)
+            identidade = false;
+    }
+}
+
+Console.WriteLine(identidade);
+
+
+Questão 45
+int[,] m = new int[4, 4];
+int soma = 0;
+
+for (int i = 0; i < 4; i++)
+{
+    for (int j = 0; j < 4; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i == 0 || j == 0 || i == 3 || j == 3)
+            soma += m[i, j];
+    }
+}
+
+Console.WriteLine(soma);
+
+
+Questão 46
+int[,] m = new int[3, 3];
+
+for (int j = 0; j < 3; j++)
+{
+    double soma = 0;
+
+    for (int i = 0; i < 3; i++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+        soma += m[i, j];
+    }
+
+    Console.WriteLine(soma / 3);
+}
+
+
+Questão 47
+int[,] m = new int[3, 3];
+int cont = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (m[i, j] == 0)
+            cont++;
+    }
+}
+
+Console.WriteLine(cont);
+
+
+Questão 48
+int[,] m = new int[3, 3];
+int prod = 1;
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i == j)
+            prod *= m[i, j];
+    }
+}
+
+Console.WriteLine(prod);
+
+
+Questão 49
+int[,] m = new int[5, 5];
+
+for (int i = 0; i < 5; i++)
+{
+    for (int j = 0; j < 5; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+
+        if (i + j == 4)
+            Console.WriteLine(m[i, j]);
+    }
+}
+
+
+Questão 50
+int[,] m = new int[3, 3];
+
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        m[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+int maiorSoma = int.MinValue;
+int linhaMaior = 0;
+
+for (int i = 0; i < 3; i++)
+{
+    int soma = 0;
+
+    for (int j = 0; j < 3; j++)
+    {
+        soma += m[i, j];
+    }
+
+    if (soma > maiorSoma)
+    {
+        maiorSoma = soma;
+        linhaMaior = i;
+    }
+}
