@@ -1,0 +1,663 @@
+Modelo básico para quase todos
+if (condicao)
+{
+    Console.WriteLine("Resultado 1");
+}
+else
+{
+    Console.WriteLine("Resultado 2");
+}
+
+
+Questão 1
+int numero = int.Parse(Console.ReadLine());
+
+if (numero % 2 == 0)
+{
+    Console.WriteLine("Par");
+}
+else
+{
+    Console.WriteLine("Ímpar");
+}
+
+Questão 2
+int idade = int.Parse(Console.ReadLine());
+
+if (idade >= 18)
+{
+    Console.WriteLine("Maior de idade");
+}
+else
+{
+    Console.WriteLine("Menor de idade");
+}
+
+Questão 3
+double nota = double.Parse(Console.ReadLine());
+
+if (nota >= 7)
+{
+    Console.WriteLine("Aprovado");
+}
+else
+{
+    Console.WriteLine("Reprovado");
+}
+
+Questão 4
+int n1 = int.Parse(Console.ReadLine());
+int n2 = int.Parse(Console.ReadLine());
+
+if (n1 > n2)
+{
+    Console.WriteLine(n1);
+}
+else if (n2 > n1)
+{
+    Console.WriteLine(n2);
+}
+else
+{
+    Console.WriteLine("Iguais");
+}
+
+Questão 5
+int numero = int.Parse(Console.ReadLine());
+
+if (numero >= 0)
+{
+    Console.WriteLine("Positivo");
+}
+else
+{
+    Console.WriteLine("Negativo");
+}
+
+Questão 6
+int numero = int.Parse(Console.ReadLine());
+
+if (numero % 5 == 0)
+{
+    Console.WriteLine("Múltiplo de 5");
+}
+else
+{
+    Console.WriteLine("Não é múltiplo de 5");
+}
+
+Questão 7
+double temperatura = double.Parse(Console.ReadLine());
+
+if (temperatura < 15)
+{
+    Console.WriteLine("Frio");
+}
+else
+{
+    Console.WriteLine("Agradável");
+}
+
+Questão 8
+char letra = char.Parse(Console.ReadLine());
+
+if (letra == 'a')
+{
+    Console.WriteLine("É a letra a");
+}
+else
+{
+    Console.WriteLine("Outra letra");
+}
+
+Questão 9
+double saldo = double.Parse(Console.ReadLine());
+
+if (saldo >= 0)
+{
+    Console.WriteLine("Saldo positivo");
+}
+else
+{
+    Console.WriteLine("Saldo negativo");
+}
+
+Questão 10
+int ano = int.Parse(Console.ReadLine());
+
+if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0))
+{
+    Console.WriteLine("Bissexto");
+}
+else
+{
+    Console.WriteLine("Não bissexto");
+}
+
+Questão 11
+char sexo = char.Parse(Console.ReadLine());
+
+if (sexo == 'M')
+{
+    Console.WriteLine("Masculino");
+}
+else
+{
+    Console.WriteLine("Feminino");
+}
+
+Questão 12
+int numero = int.Parse(Console.ReadLine());
+
+if (numero % 3 == 0)
+{
+    Console.WriteLine("Divisível por 3");
+}
+else
+{
+    Console.WriteLine("Não divisível por 3");
+}
+
+Questão 13
+double velocidade = double.Parse(Console.ReadLine());
+
+if (velocidade <= 60)
+{
+    Console.WriteLine("Dentro do limite");
+}
+else
+{
+    Console.WriteLine("Acima do limite");
+}
+
+Questão 14
+double consumo = double.Parse(Console.ReadLine());
+
+if (consumo < 10)
+{
+    Console.WriteLine("Econômico");
+}
+else
+{
+    Console.WriteLine("Alto consumo");
+}
+
+Questão 15
+int n1 = int.Parse(Console.ReadLine());
+int n2 = int.Parse(Console.ReadLine());
+
+if (n1 > 0 && n2 > 0)
+{
+    Console.WriteLine(n1 + n2);
+}
+else
+{
+    Console.WriteLine(n1 - n2);
+}
+
+Questão 16
+double media = double.Parse(Console.ReadLine());
+
+if (media >= 7)
+{
+    Console.WriteLine("Passou direto");
+}
+else
+{
+    Console.WriteLine("Recuperação");
+}
+
+Questão 17
+int numero = int.Parse(Console.ReadLine());
+
+if (numero == 0)
+{
+    Console.WriteLine("Igual a zero");
+}
+else
+{
+    Console.WriteLine("Diferente de zero");
+}
+
+Questão 18
+double preco = double.Parse(Console.ReadLine());
+
+if (preco > 50)
+{
+    Console.WriteLine("Caro");
+}
+else
+{
+    Console.WriteLine("Barato");
+}
+
+Questão 19
+double peso = double.Parse(Console.ReadLine());
+
+if (peso > 80)
+{
+    Console.WriteLine("Acima de 80kg");
+}
+else
+{
+    Console.WriteLine("Abaixo ou igual a 80kg");
+}
+
+Questão 20
+int numero = int.Parse(Console.ReadLine());
+
+if (numero % 10 == 0)
+{
+    Console.WriteLine("Múltiplo de 10");
+}
+else
+{
+    Console.WriteLine("Não é múltiplo de 10");
+}
+
+Questão 21
+int estoque = int.Parse(Console.ReadLine());
+
+if (estoque > 0)
+{
+    Console.WriteLine("Estoque ok");
+}
+else
+{
+    Console.WriteLine("Sem estoque");
+}
+
+Questão 22
+int hora = int.Parse(Console.ReadLine());
+
+if (hora < 12)
+{
+    Console.WriteLine("Bom dia");
+}
+else
+{
+    Console.WriteLine("Boa tarde/noite");
+}
+
+Questão 23
+int valor1 = int.Parse(Console.ReadLine());
+int valor2 = int.Parse(Console.ReadLine());
+
+if (valor1 % valor2 == 0)
+{
+    Console.WriteLine("Divisível");
+}
+else
+{
+    Console.WriteLine("Não divisível");
+}
+
+Questão 24
+double nota = double.Parse(Console.ReadLine());
+
+if (nota >= 60)
+{
+    Console.WriteLine("Aprovado no concurso");
+}
+else
+{
+    Console.WriteLine("Reprovado");
+}
+
+Questão 25
+int numero = int.Parse(Console.ReadLine());
+
+if (numero % 10 == 0)
+{
+    Console.WriteLine("Termina em zero");
+}
+else
+{
+    Console.WriteLine("Não termina em zero");
+}
+
+Questão 26
+double compra = double.Parse(Console.ReadLine());
+
+if (compra > 100)
+{
+    Console.WriteLine("Há desconto");
+}
+else
+{
+    Console.WriteLine("Sem desconto");
+}
+
+Questão 27
+int idade = int.Parse(Console.ReadLine());
+
+if (idade >= 16)
+{
+    Console.WriteLine("Pode votar");
+}
+else
+{
+    Console.WriteLine("Não pode votar");
+}
+
+Questão 28
+char letra = char.Parse(Console.ReadLine());
+
+if (char.IsUpper(letra))
+{
+    Console.WriteLine("Maiúscula");
+}
+else
+{
+    Console.WriteLine("Minúscula");
+}
+
+Questão 29
+double distancia = double.Parse(Console.ReadLine());
+
+if (distancia < 5)
+{
+    Console.WriteLine("Perto");
+}
+else
+{
+    Console.WriteLine("Longe");
+}
+
+Questão 30
+int numero = int.Parse(Console.ReadLine());
+
+if (numero > 100)
+{
+    Console.WriteLine("Maior que 100");
+}
+else if (numero < 100)
+{
+    Console.WriteLine("Menor que 100");
+}
+else
+{
+    Console.WriteLine("Igual a 100");
+}
+
+Questão 31
+double chuva = double.Parse(Console.ReadLine());
+
+if (chuva > 0)
+{
+    Console.WriteLine("Levar guarda-chuva");
+}
+else
+{
+    Console.WriteLine("Tempo seco");
+}
+
+Questão 32
+double combustivel = double.Parse(Console.ReadLine());
+
+if (combustivel > 20)
+{
+    Console.WriteLine("Pode viajar");
+}
+else
+{
+    Console.WriteLine("Abasteça antes");
+}
+
+Questão 33
+int n1 = int.Parse(Console.ReadLine());
+int n2 = int.Parse(Console.ReadLine());
+
+if (n1 % 2 == 0 && n2 % 2 != 0)
+{
+    Console.WriteLine($"{n1} é par");
+}
+else if (n2 % 2 == 0 && n1 % 2 != 0)
+{
+    Console.WriteLine($"{n2} é par");
+}
+else if (n1 % 2 == 0 && n2 % 2 == 0)
+{
+    Console.WriteLine("Ambos são pares");
+}
+else
+{
+    Console.WriteLine("Nenhum é par");
+}
+
+Questão 34
+double temperatura = double.Parse(Console.ReadLine());
+
+if (temperatura > 37.5)
+{
+    Console.WriteLine("Febre");
+}
+else
+{
+    Console.WriteLine("Normal");
+}
+
+Questão 35
+int numero = int.Parse(Console.ReadLine());
+
+if (numero % 2 == 0)
+{
+    Console.WriteLine(numero * 2);
+}
+else
+{
+    Console.WriteLine(numero * 3);
+}
+
+Questão 36
+int senha = int.Parse(Console.ReadLine());
+
+if (senha == 1234)
+{
+    Console.WriteLine("Acesso liberado");
+}
+else
+{
+    Console.WriteLine("Acesso negado");
+}
+
+Questão 37
+double divida = double.Parse(Console.ReadLine());
+
+if (divida == 0)
+{
+    Console.WriteLine("Quitada");
+}
+else
+{
+    Console.WriteLine($"Valor pendente: {divida}");
+}
+
+Questão 38
+double altura = double.Parse(Console.ReadLine());
+
+if (altura > 1.20)
+{
+    Console.WriteLine("Pode brincar");
+}
+else
+{
+    Console.WriteLine("Não pode");
+}
+
+Questão 39
+int dia = int.Parse(Console.ReadLine());
+
+if (dia >= 1 && dia <= 5)
+{
+    Console.WriteLine("Dia útil");
+}
+else if (dia == 6 || dia == 7)
+{
+    Console.WriteLine("Fim de semana");
+}
+else
+{
+    Console.WriteLine("Dia inválido");
+}
+
+Questão 40
+int pontos = int.Parse(Console.ReadLine());
+
+if (pontos >= 21)
+{
+    Console.WriteLine("Vitória");
+}
+else
+{
+    Console.WriteLine("Continua jogando");
+}
+
+Questão 41
+double salario = double.Parse(Console.ReadLine());
+
+if (salario > 2000)
+{
+    Console.WriteLine("Paga imposto");
+}
+else
+{
+    Console.WriteLine("Isenta");
+}
+
+Questão 42
+double lado1 = double.Parse(Console.ReadLine());
+double lado2 = double.Parse(Console.ReadLine());
+
+if (lado1 == lado2)
+{
+    Console.WriteLine("Quadrado");
+}
+else
+{
+    Console.WriteLine("Retângulo comum");
+}
+
+Questão 43
+int erros = int.Parse(Console.ReadLine());
+
+if (erros < 3)
+{
+    Console.WriteLine("Aprovado");
+}
+else
+{
+    Console.WriteLine("Refazer");
+}
+
+Questão 44
+int numero = int.Parse(Console.ReadLine());
+
+if (numero % 100 == 0)
+{
+    Console.WriteLine("Centena exata");
+}
+else
+{
+    Console.WriteLine("Não é centena exata");
+}
+
+Questão 45
+double imc = double.Parse(Console.ReadLine());
+
+if (imc >= 18.5 && imc <= 25)
+{
+    Console.WriteLine("Peso normal");
+}
+else
+{
+    Console.WriteLine("Fora do ideal");
+}
+
+Questão 46
+int porta = int.Parse(Console.ReadLine());
+
+if (porta % 2 == 0)
+{
+    Console.WriteLine("Lado direito");
+}
+else
+{
+    Console.WriteLine("Lado esquerdo");
+}
+
+Questão 47
+int tempo = int.Parse(Console.ReadLine());
+
+if (tempo <= 120)
+{
+    Console.WriteLine("Dentro do prazo");
+}
+else
+{
+    Console.WriteLine("Tempo esgotado");
+}
+
+Questão 48
+double n1 = double.Parse(Console.ReadLine());
+double n2 = double.Parse(Console.ReadLine());
+
+double media = (n1 + n2) / 2;
+
+Console.WriteLine($"Média: {media}");
+
+if (media > 50)
+{
+    Console.WriteLine("Maior que 50");
+}
+else
+{
+    Console.WriteLine("Menor ou igual a 50");
+}
+
+Questão 49
+int vidas = int.Parse(Console.ReadLine());
+
+if (vidas == 0)
+{
+    Console.WriteLine("Game over");
+}
+else
+{
+    Console.WriteLine("Continue");
+}
+
+Questão 50
+int numero = int.Parse(Console.ReadLine());
+
+if (numero >= -9 && numero <= 9)
+{
+    Console.WriteLine("Número de um dígito");
+}
+else
+{
+    Console.WriteLine("Número com mais de um dígito");
+}
+
+Macetes novos desta lista
+Situação
+Código
+Par ou ímpar
+numero % 2 == 0
+Múltiplo de X
+numero % X == 0
+Intervalo
+valor >= min && valor <= max
+Uma condição OU outra
+`cond1
+Maiúscula
+char.IsUpper(letra)
+Média
+(n1 + n2) / 2
+Ano bissexto
+`(ano % 4 == 0 && ano % 100 != 0)
+Último dígito
+numero % 10
+Centena exata
+numero % 100 == 0
+
